@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Employé</title>
+    <link href="../node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules\bootstrap-icons\font\bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span>Vite &amp; Gourmand</span>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../pages/nos-menus.html">Nos menus</a></li>
+                <li><a href="../pages/connexion.html">Connexion</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button aria-label="Ouvrir le menu" class="burger-menu"><i class="bi bi-list"></i></button>
+    </header> 
+
+    <main class="main-connexion">
+        <h2 class="class-commande">Espace Utilisateur</h2>
+        <section>
+            <h4 class="class-commande">Gestion des commandes</h4>
+            <div class="connexion">
+            <label>Nom Prénom:</label>
+            <input type="text">
+            </div>
+            <div class="connexion">
+            <label>Détails du menu:</label>
+            <ul>
+                <li>Plats:</li>
+                <li>Horaire:</li>
+                <li>Nb de pers.:</li>
+            </ul>
+            </div>
+            <div class="connexion"
+            <label>Etat de la commande:</label>
+            <select>
+            <option selected>En cours</option>
+            <option>Traitée</option>
+            <option>Annulée</option>
+            </select> 
+            </div>
+            <a href="#" aria-label="Valider" class="valider">Valider/Annuler</a>
+        </section>
+        <section>
+            <h4 class="class-commande">Filtre des commandes</h4>
+            <div class="connexion">
+            <label>Client:</label>
+            <input type="text">
+            </div>
+            <div class="connexion">
+            <label>Statut de la commande:</label>
+            <select>
+            <option selected>En cours</option>
+            <option>Traitée</option>
+            <option>Annulée</option>
+            </select> 
+            </div>
+            <a href="#" aria-label="Valider" class="valider">Filtrer</a>
+        </section>
+        <div class="class-commande">
+            <h2>Gestion des menus</h2>
+        </div>
+        <h2 class="card-title">Le Chapon De Noël</h2>
+        <p class="card-text">Entrée: Tranches de foie gras de canard sur pain d’épices.
+            <br>Allergènes: gluten.
+        </p>
+        <p class="card-text">Plat: Chapon rôti farci aux marrons, purée et fagots de haricots verts au lard.
+            <br>Allergènes: aucun.
+        </p>
+        <p class="card-text">Dessert: Bûche de Noël pâtissière citron et meringue.
+            <br>Allergènes: oeufs, gluten, fruits à coque.
+        </p>
+        <ul class="card-text">
+            <li>Thème: Noël</li>
+            <li>Régime: Classique</li>
+            <li>Prix: 45€/pers.</li>
+        </ul>
+            <p>Conditions:</p>
+            <ul>
+                <li>à partir de 6 personnes minimum.</li>
+                <li>commande à passer 5j avant la prestation.</li>
+            </ul>
+            <p>disponible</p>
+            
+        </div>
+        </div>
+    </main>
+ 
+    <footer>
+        <div class="horaires">
+            <h2>Nos horaires</h2>
+            <p>Midi : 11h - 14h / Soir : 19h - 22h</p>
+            <p>du lundi au dimanche</p>
+        </div>
+        <div class="mentions">
+            <a href="#">mentions légales</a>
+            <a href="#">CGV</a>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

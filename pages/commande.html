@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande</title>
+    <link href="../node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules\bootstrap-icons\font\bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span>Vite &amp; Gourmand</span>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../pages/nos-menus.html">Nos menus</a></li>
+                <li><a href="../pages/connexion.html">Connexion</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button aria-label="Ouvrir le menu" class="burger-menu"><i class="bi bi-list"></i></button>
+    </header> 
+    <main>
+        <h2 class="class-commande">Commande</h2>
+        <form>
+        <div class="form-row">
+        
+        <div class="form-group col-md-6">
+          <label>Nom</label>
+          <input type="text" class="form-control" placeholder="Nom">
+          <label>Prénom</label>
+          <input type="text" class="form-control" placeholder="Prénom">
+          <label>Téléphone</label>
+          <input type="tel" class="form-control" id="inputEmail4" placeholder="Téléphone">
+          <label>Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          <label>Adresse</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Adresse">
+        </div>  
+        <div class="form-group col-md-6"></div>  
+          <label>Prestation</label>
+          <select class="form-control">
+            <option selected>Menu de Noël</option>
+            <option>Menu de Pâques</option>
+            <option>Menu d'événement</option>
+          </select>
+          <label>Plat</label>
+          <select class="form-control">
+            <option selected>Chapon de Noël</option>
+            <option>Dinde farcie</option>
+            <option>Cortège de Gambas</option>
+          </select>
+          <label for="date">Date</label>
+          <input type="date" id="date" class="form-control">
+          <label for="heure">Heure</label>
+          <input type="time" id="heure" class="form-control">
+          <label>Nb de pers.</label>
+          <input type="number" class="form-control" min="1">
+          <div class="cout">
+          <div class="cout-fige">
+          <label for="prix">Prix:</label>
+          <input type="number" id="prix" name="prix" min="0" step="0.01" placeholder="0,00">
+          <span class="devise">€</span>
+          </div>
+          <div class="cout-fige">
+          <label for="frais">Frais:</label>
+          <input type="number" id="frais" name="prix" min="0" step="0.01" placeholder="0,00">
+          <span class="devise">€</span>
+          </div>
+          <div class="cout-fige">
+          <label for="total">Prix Total:</label>
+          <input type="number" id="total" name="prix" min="0" step="0.01" placeholder="0,00">
+          <span class="devise">€</span>
+          </div>
+          </div>
+         </div>
+        </div>
+      </div>   
+        <a href="#" aria-label="Valider" class="valider">Valider</a>
+        </form>
+    </main>
+ 
+    <footer>
+        <div class="horaires">
+            <h2>Nos horaires</h2>
+            <p>Midi : 11h - 14h / Soir : 19h - 22h</p>
+            <p>du lundi au dimanche</p>
+        </div>
+        <div class="mentions">
+            <a href="#">mentions légales</a>
+            <a href="#">CGV</a>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

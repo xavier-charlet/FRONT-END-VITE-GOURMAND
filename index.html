@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite et Gourmand</title>
+    <link href="node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules\bootstrap-icons\font\bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span>Vite &amp; Gourmand</span>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pages/nos-menus.html">Nos menus</a></li>
+                <li><a href="pages/connexion.html">Connexion</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button aria-label="Ouvrir le menu" class="burger-menu"><i class="bi bi-list"></i></button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Julie et José vous invitent à savourer Vite &amp; Gourmand</h2>
+            <a href="pages/nos-menus.html" aria-label="Découvrir nos menus" class="discover">Découvrir nos menus</a>
+        </section>        
+        <div class="contenu-global"> 
+        <section class="welcome">
+            <h2>Bienvenue à Vite &amp; Gourmand</h2>
+            <div class="bienvenue">
+                <p>Depuis 25 ans, Julie et José mettent leur savoir-faire au service de vos événements les plus précieux. De Noël à Pâques, en passant par toutes vos occasions à célébrer, notre équipe compose des menus soignés et renouvelés, pensés pour surprendre à chaque fois.</p>
+                <img src="images/chef.jpg" class="image-chef" alt="image de chef">
+            </div>   
+        </section>
+        <section class="avis">
+            <h2>Les avis de nos clients</h2>
+            <div class="carte-avis">
+                <div class="cercle"></div>
+                <div class="contenu-avis">
+                    <p>Prénom Nom</p>
+                    <p>Restaurant très agréable. Nous avons apprécié les choix disponibles au niveau des menus.</p>
+                    <div class="etoiles">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <div class="horaires">
+            <h2>Nos horaires</h2>
+            <p>Midi : 11h - 14h / Soir : 19h - 22h</p>
+            <p>du lundi au dimanche</p>
+        </div>
+        <div class="mentions">
+            <a href="#">mentions légales</a>
+            <a href="#">CGV</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+</body>
+</html>

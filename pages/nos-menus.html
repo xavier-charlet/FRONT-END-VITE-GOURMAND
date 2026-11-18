@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos menus</title>
+    <link href="../node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="../node_modules\bootstrap-icons\font\bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span>Vite &amp; Gourmand</span>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../pages/nos-menus.html">Nos menus</a></li>
+                <li><a href="../pages/connexion.html">Connexion</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button aria-label="Ouvrir le menu" class="burger-menu"><i class="bi bi-list"></i></button>
+    </header>
+
+    <main>
+    <section class="nos-menus">
+        <h2>Nos menus</h2>
+    </section>
+    <section class="formulaire-recherche">
+        <div class="card p-4 shadow-sm border-0 bg-light">
+    <h4 class="mb-4">Trouver un menu</h4>
+    <form>
+    
+    <!-- Ligne 1 : Nombre de personnes et Fourchette de Prix -->
+    <div class="row g-3 mb-4">
+      <!-- Nombre de personnes minimum (Champ numérique) -->
+      <div class="col-md-4">
+        <label for="minPeople" class="form-label fw-bold">Nombre de personnes</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-people"></i></span>
+          <input type="number" class="form-control" id="minPeople" min="1" max="50" placeholder="Ex: 2" value="1" aria-label="Nombre de personnes minimum">
+        </div>
+      </div>
+
+      <!-- Fourchette de prix & Prix Max -->
+      <div class="col-md-8">
+        <label class="form-label fw-bold">Budget (Prix Min / Max)</label>
+        <div class="input-group">
+          <span class="input-group-text">€</span>
+          <input type="number" class="form-control" placeholder="Min" aria-label="Prix minimum">
+          <span class="input-group-text">à</span>
+          <input type="number" class="form-control" placeholder="Max (€)" aria-label="Prix maximum">
+        </div>
+      </div>
+    </div>
+
+    <!-- Ligne 2 : Thème et Régime Alimentaire -->
+    <div class="row g-3 mb-4">
+      <!-- Thème de cuisine -->
+      <div class="col-md-6">
+        <label for="restaurantTheme" class="form-label fw-bold">Thème</label>
+        <select class="form-select" id="restaurantTheme">
+          <option selected>Tous les thèmes...</option>
+          <option value="noel">Menu de Noël</option>
+          <option value="paques">Menu de Pâques</option>
+          <option value="événement">Menu d'Événement</option>
+        </select>
+      </div>
+
+      <!-- Régime Alimentaire -->
+      <div class="col-md-6">
+        <label for="dietaryRequirement" class="form-label fw-bold">Régime alimentaire</label>
+        <select class="form-select" id="dietaryRequirement">
+          <option selected>Sans restriction particulière</option>
+          <option value="vege">Végétarien</option>
+          <option value="vegan">Vegan</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Boutons de soumission -->
+    <div class="d-flex justify-content-end gap-2 boutons-recherche">
+      <button type="reset" class="btn btn-outline-secondary">Effacer</button>
+      <button type="submit" class="btn btn-warning text-dark px-4 fw-bold">Rechercher</button>
+    </div>
+
+    </form>
+    </div>
+    </section>
+
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active menu-noel">
+      <h2>Menu de Noël</h2>
+      <ul>
+        <li>Un repas festif et chaleureux pour célébrer Noël en famille ou entre amis.</li>
+        <li>Thème: Noël</li>
+        <li>Régime: classique</li>
+        <li>Prix: 45€/personne</li>
+        <li>Nombre de personnes minimum: 6</li>
+      </ul>
+      <a href="details-menu.html" aria-label="Découvrir nos menus" class="discover-noel">Détails</a>
+    </div>
+    <div class="carousel-item menu-paques">
+      <h2>Menu de Pâques</h2>
+      <ul>
+        <li>Une sélection de plats végétariens gourmands, pour célébrer Pâques autrement.</li>
+        <li>Thème: Pâques</li>
+        <li>Régime: végétarien</li>
+        <li>Prix: 28€/personne</li>
+        <li>Nombre de personnes minimum: 4</li>
+      </ul>
+      <a href="details-menu.html" aria-label="Découvrir nos menus" class="discover-paques">Détails</a>
+    </div>
+    <div class="carousel-item menu-evenement">
+      <h2>Menu d'événement</h2>
+      <ul>
+        <li>Une carte 100% vegan pensée pour sublimer vos événements les plus originaux</li>
+        <li>Thème: Evénements</li>
+        <li>Régime: vegan</li>
+        <li>Prix: 22€/personne</li>
+        <li>Nombre de personnes minimum: 2</li>
+      </ul>
+      <a href="details-menu.html" aria-label="Découvrir nos menus" class="discover-event">Détails</a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    
+
+    </main>
+
+    <footer>
+        <div class="horaires">
+            <h2>Nos horaires</h2>
+            <p>Midi : 11h - 14h / Soir : 19h - 22h</p>
+            <p>du lundi au dimanche</p>
+        </div>
+        <div class="mentions">
+            <a href="#">mentions légales</a>
+            <a href="#">CGV</a>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
